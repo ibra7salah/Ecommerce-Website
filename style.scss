@@ -1,0 +1,154 @@
+:root {
+  --color-gray: hsl(0, 0, 77, 100%);
+  --color-gold: hsl(42, 59, 45, 100%);
+  --color-gray-footer: hsl(0, 0, 63, 100%);
+  --color-green: #2ec1ac;
+  --font-family-h1: "Montserrat", sans-serif;
+  --font-family-Poppins: "Poppins", sans-serif;
+  --font-size: 16px;
+  --color-primary: #b88e2f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  width: 1286px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 100px 30px 54px;
+}
+
+.h1-header {
+  font-family: var(--font-family-h1);
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.logo_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  padding-right: 230px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 4.5rem;
+}
+
+.nav-li {
+  font-family: var(--font-family-Poppins);
+  font-size: var(--font-size);
+}
+
+.icon-header {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding-left: 160px;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // width: 1400px;
+  margin-bottom: 100px;
+}
+
+.img-banner {
+  max-width: 1350px;
+}
+
+.ad-banner {
+  display: flex;
+  position: absolute;
+  left: 51.5%;
+  flex-direction: column;
+  // margin-right: 58px;
+  border-radius: 10px;
+  background-color: #fff3e3;
+  width: 600px;
+  height: 444px;
+  padding: 61px 36px 37px 38px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.new-arrival {
+  font-family: var(--font-family-Poppins);
+  font-size: var(--font-size);
+  color: #333333;
+  letter-spacing: 3px;
+  font-weight: 500;
+}
+
+.h2-heading {
+  font-family: var(--font-family-Poppins);
+  font-size: 52px;
+  font-weight: bold;
+  color: var(--color-primary);
+  width: 400px;
+  line-height: 65px;
+  padding: 4px 0 17px;
+}
+
+.banner-description {
+  color: #333333;
+  font-family: var(--font-family-Poppins);
+  font-size: 18px;
+  line-height: 24px;
+  width: 530px;
+  font-weight: 500;
+}
+
+.banner-button {
+  border: 1px hidden;
+  background-color: var(--color-primary);
+  width: 222px;
+  height: 74px;
+  margin-top: 46px;
+  font-family: var(--font-family-Poppins);
+  font-size: var(--font-size);
+  font-weight: bold;
+  color: #fff3e3;
+}
