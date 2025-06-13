@@ -1,12 +1,13 @@
 :root {
   --color-gray: hsl(0, 0, 77, 100%);
-  --color-gold: hsl(42, 59, 45, 100%);
   --color-gray-footer: hsl(0, 0, 63, 100%);
   --color-green: #2ec1ac;
   --font-family-h1: "Montserrat", sans-serif;
   --font-family-Poppins: "Poppins", sans-serif;
   --font-size: 16px;
   --color-primary: #b88e2f;
+  --color-text: #333333;
+  --color-description: #666666;
 }
 
 * {
@@ -72,11 +73,17 @@ ol {
 .nav-list {
   display: flex;
   gap: 4.5rem;
+  font-weight: 600;
 }
 
 .nav-li {
   font-family: var(--font-family-Poppins);
   font-size: var(--font-size);
+}
+
+.nav-li:hover {
+  color: var(--color-primary);
+  cursor: pointer;
 }
 
 .icon-header {
@@ -91,8 +98,6 @@ ol {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // width: 1400px;
-  margin-bottom: 100px;
 }
 
 .img-banner {
@@ -150,5 +155,56 @@ ol {
   font-family: var(--font-family-Poppins);
   font-size: var(--font-size);
   font-weight: bold;
-  color: #fff3e3;
+  color: white;
+  border-radius: 5px;
+}
+
+.banner-button:hover {
+  color: var(--color-primary);
+  background-color: white;
+}
+
+.rooms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1183px;
+  margin-top: 56px;
+}
+
+.h3-heading {
+  font-family: var(--font-family-Poppins);
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.description-type {
+  font-family: var(--font-family-Poppins);
+  font-size: 20px;
+  color: var(--color-description);
+}
+
+.rooms-type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 62px 127px 55px 130px;
+  gap: 20px;
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--font-family-Poppins);
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.rooms-type-img {
+  margin-bottom: 30px;
+  border-radius: 10px;
 }
